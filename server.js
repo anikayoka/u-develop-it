@@ -16,7 +16,7 @@ app.use('/api', apiRoutes);
 app.use((req, res) => {
   res.status(404).end();
 });
-
+console.log('testing 456...')
 // Start server after DB connection
 db.connect(err => {
   if (err) throw err;
